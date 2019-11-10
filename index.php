@@ -10,46 +10,47 @@
   <link rel="stylesheet" href="styles.css">
   <title>What I do</title>
 </head>
-<body ng-app>
+<body>
   <header>
       <div class="wrapper">
     <div class="header">
       <h2>xyluz.com</h2>
     </div>
     <div class="menu-div">
-      <a href="" class="toggle-button">
+      <a class="toggle-button">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
       </a>
     </div>
+    </div>
   </header>
 
   <nav class="links">
-    <ul>
-      <li><a href="#" class="underlined">What I do</a></li>
-      <li><a href="education.php">Education</a></li>
-      <li><a href="work.php">Work</a></li>
-      <li><a href="interests.php">Interests</a></li>
-      <li><a href="contact.php">Contact</a></li>
+    <ul >
+      <li><a class="tablinks" href="javascript:void(0)" id="defaultOpen" onclick="switchPage(event, 'index')">What I do</a></li>
+      <li><a class="tablinks" href="javascript:void(0)" onclick="switchPage(event, 'education')">Education</a></li>
+      <li><a class="tablinks" href="javascript:void(0)" onclick="switchPage(event, 'work')">Work</a></li>
+      <li><a class="tablinks" href="javascript:void(0)" onclick="switchPage(event, 'interest')">Interests</a></li>
+      <li><a class="tablinks" href="javascript:void(0)" onclick="switchPage(event, 'contact')">Contact</a></li>
     </ul>
   </nav>
 
-  <main>
-    <div class="container">
+  <main class="pager">
+    <div id="index" class="pageContent container">
       <div class="intro">
         <div class="intro-text">
-          <div class="wow bounceInUp">
+          <div class="">
             <h2>Hi! I'm Seyi Onifade</h2>
           </div>
-          <div class="wow bounceInUp">
+          <div class="">
             <p>I'm a developer from Lagos, Nigeria.</p>
             <p>I develop products using Javascript and PHP.</p>
           </div>
         </div>
         <div class="intro-icons">
           <div>
-            <a href="https://twitter.com/xyluz"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
           </div>
           <div>
             <i class="fa fa-envelope" aria-hidden="true"></i>          </div>
@@ -58,13 +59,148 @@
 
       <div class="arrow-down">
         <div>
-          <a href="index.php"><i class="fa fa-angle-up wow bounceInDown" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-angle-up wow rotateInDownleft" aria-hidden="true"></i></a>
         </div>
         <div>
-          <a href="education.php" class="wow bounceInUp"><i class="fa fa-angle-down " aria-hidden="true"></i></a>
+          <a href="javascript:void(0)" onclick="switchPage(event, 'education')" class=""><i class="fa fa-angle-down " aria-hidden="true"></i></a>
         </div>
       </div>
     </div>
+    <div id="education" class="pageContent container">
+      <div class="intro">
+        <div class="intro-text wow fadeIn">
+          <div>
+            <h2>Education</h2>
+          </div>
+          <div>
+            <strong><p class="big-txt">Lautech Ogbomoso - (SLT) Physics Electronics.</p></strong>
+            <p class="small-txt">Second Class Upper - 2013</p>
+          </div>
+          <div>
+            <strong><p>HNG Internship 1.0 - Track</p></strong>
+            <p class="small-txt">Finalist - Year</p>
+          </div>
+        </div>
+        <div class="intro-icons">
+          <div>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </div>
+          <div>
+            <i class="fa fa-envelope" aria-hidden="true"></i>          </div>
+        </div>
+      </div>
+
+      <div class="arrow-down">
+        <div>
+          <a href="javascript:void(0)" onclick="switchPage(event, 'index')"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+        </div>
+        <div>
+          <a href="javascript:void(0)" onclick="switchPage(event, 'work')"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+    <div id="work" class="pageContent container">
+      <div class="intro">
+        <div class="intro-text">
+          <div>
+            <h2>Work</h2>
+          </div>
+          <div>
+            <strong><p class="big-txt">CEO - HNG Tech</p></strong>
+            <p class="small-txt">2019</p>
+          </div>
+          <div>
+            <strong><p>Creator - <span class="bent">Staybusy.ng</span></p></strong>
+            <p class="small-txt">Finalist - Year</p>
+          </div>
+        </div>
+        <div class="intro-icons">
+          <div>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </div>
+          <div>
+            <i class="fa fa-envelope" aria-hidden="true"></i>          </div>
+        </div>
+      </div>
+
+      <div class="arrow-down">
+        <div>
+          <a href="javascript:void(0)" onclick="switchPage(event, 'education')"> <i class="fa fa-angle-up" aria-hidden="true"></i></a>
+        </div>
+        <div>
+          <a href="javascript:void(0)" onclick="switchPage(event, 'interest')"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+    <div id="interest" class="pageContent container">
+      <div class="intro">
+        <div class="intro-text">
+          <div>
+            <h2>Interests</h2>
+          </div>
+          <div class="interest">
+            <p>I’m currently fascinated by IoT (meaning the Internet of things) especially relating to Python and Hardware programming</p>
+          </div>
+        </div>
+        <div class="intro-icons">
+          <div>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </div>
+          <div>
+            <i class="fa fa-envelope" aria-hidden="true"></i>          </div>
+        </div>
+      </div>
+
+      <div class="arrow-down">
+        <div>
+          <a href="javascript:void(0)" onclick="switchPage(event, 'work')"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+        </div>
+        <div>
+          <a href="javascript:void(0)" onclick="switchPage(event, 'contact')"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+    <div id="contact" class="container pageContent">
+      <div class="intro">
+        <div class="intro-text">
+          <div>
+            <h2>Contact</h2>
+          </div>
+          <div>
+            <p>Feel free to reach me anywhere:</p>
+          </div>
+          <div class="social-media">
+            <div>
+              <p><span><i class="fa fa-twitter" aria-hidden="true"></i></span>  &nbsp;  @xyluz</p>
+            </div>
+            <div>
+              <p><span><i class="fa fa-envelope" aria-hidden="true"></i></span>  &nbsp;  seyi@hng.tech</p>
+            </div>
+            <div>
+              <p><span><i class="fa fa-envelope" aria-hidden="true"></i></span>  &nbsp;  seyi@staybusy.ng</p>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="intro-icons">
+          <div>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </div>
+          <div>
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+          </div>
+        </div> -->
+      </div>
+
+      <div class="arrow-down">
+        <div>
+          <a href="javascript:void(0)" onclick="switchPage(event, 'interest')"> <i class="fa fa-angle-up" aria-hidden="true"></i></a>
+        </div>
+        <div>
+          <a href="javascript:void(0)"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+
   </main>
   
 
@@ -73,7 +209,54 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
   <script>
       new WOW().init();
-  </script>
- 
+
+      function switchPage(evt, page) {
+          // Declare all variables
+          var i, pageContent, tablinks;
+
+          // Get all elements with class="tabcontent" and hide them
+          pageContent = document.getElementsByClassName("pageContent");
+          for (i = 0; i < pageContent.length; i++) {
+              pageContent[i].style.display = "none";
+          }
+
+          // Get all elements with class="tablinks" and remove the class "active"
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+
+          // Show the current tab, and add an "active" class to the button that opened the tab
+          document.getElementById(page).style.display = "block";
+          evt.currentTarget.className += " active";
+      }
+
+      document.getElementById("defaultOpen").click();
+</script>
+
+<script src="script.js"></script>
+
 </body>
+
+<style>
+
+
+
+  .pageContent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    animation: bounceInUp 1s; /* Fading effect takes 1 second */
+
+  }
+
+
+  nav ul li .active {
+    color: #fff;
+    background-color: #4A4C59;
+    padding: 0.5rem;
+  }
+
+</style>
 </html>
