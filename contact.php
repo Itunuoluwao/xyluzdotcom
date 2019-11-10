@@ -28,10 +28,10 @@
 
   <nav class="links">
     <ul>
-      <li><a href="index.html">What I do</a></li>
-      <li><a href="education.html">Education</a></li>
-      <li><a href="work.html">Work</a></li>
-      <li><a href="interests.html">Interests</a></li>
+      <li><a href="index.php">What I do</a></li>
+      <li><a href="education.php">Education</a></li>
+      <li><a href="work.php">Work</a></li>
+      <li><a href="interests.php">Interests</a></li>
       <li><a href="#" class="underlined">Contact</a></li>
     </ul>
   </nav>
