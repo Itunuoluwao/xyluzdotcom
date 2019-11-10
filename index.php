@@ -28,10 +28,10 @@
   <nav class="links">
     <ul>
       <li><a href="#" class="underlined">What I do</a></li>
-      <li><a href="education.html">Education</a></li>
-      <li><a href="work.html">Work</a></li>
-      <li><a href="interests.html">Interests</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="education.php">Education</a></li>
+      <li><a href="work.php">Work</a></li>
+      <li><a href="interests.php">Interests</a></li>
+      <li><a href="contact.php">Contact</a></li>
     </ul>
   </nav>
 
@@ -58,10 +58,10 @@
 
       <div class="arrow-down">
         <div>
-          <a href="index.html"><i class="fa fa-angle-up wow bounceInDown" aria-hidden="true"></i></a>
+          <a href="index.php"><i class="fa fa-angle-up wow bounceInDown" aria-hidden="true"></i></a>
         </div>
         <div>
-          <a href="education.html" class="wow bounceInUp"><i class="fa fa-angle-down " aria-hidden="true"></i></a>
+          <a href="education.php" class="wow bounceInUp"><i class="fa fa-angle-down " aria-hidden="true"></i></a>
         </div>
       </div>
     </div>

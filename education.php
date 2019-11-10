@@ -62,10 +62,10 @@
 
   <div class="arrow-down">
     <div>
-      <a href="index.html"><i class="fa fa-angle-up wow bounceInDown" aria-hidden="true"></i></a>
+      <a href="index.php"><i class="fa fa-angle-up wow bounceInDown" aria-hidden="true"></i></a>
     </div>
     <div>
-      <a href="work.html" class="wow bounceInUp"><i class="fa fa-angle-down " aria-hidden="true"></i></a>
+      <a href="work.php" class="wow bounceInUp"><i class="fa fa-angle-down " aria-hidden="true"></i></a>
     </div>
   </div>
 </div>
