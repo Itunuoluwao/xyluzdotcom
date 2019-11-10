@@ -148,12 +148,18 @@ nav ul li a:hover {
   margin: auto;
   text-align: left;
 }
+a {
+  color: inherit;
+  text-decoration: none;}
+
+
+
 
 @media screen and (max-width: 960px) {
   .social-media {
     width: 35%;
   }
-}
+  
 
 @media screen and (max-width: 866px) {
   .interest {
@@ -210,11 +216,11 @@ nav ul li a:hover {
     display: flex;
   }
 
-  nav.active {
+  .nav.active {
     display: flex;
   }
 
-  nav ul {
+  .nav ul {
     flex-direction: column;
     align-items: center;
   }
@@ -267,7 +273,7 @@ nav ul li a:hover {
     font-size: 19px;
   }
 
-  header h2 {
+  .header h2 {
     font-size: 41px;
   }
 }
